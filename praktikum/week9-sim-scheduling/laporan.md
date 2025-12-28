@@ -1,26 +1,27 @@
 
-# Laporan Praktikum Minggu [X]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
+# Laporan Praktikum Minggu 9
+Topik: Simulasi Algoritma Penjadwalan CPU
 
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
+- **Nama**  : Putri Amaliya Rahmadani  
+- **NIM**   :  250202924
+- **Kelas** : 1 IKRA
 
 ---
 
 ## Tujuan
-Tuliskan tujuan praktikum minggu ini.  
-Contoh:  
-> Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
+Mahasiswa mampu menganalisis cara kerja berbagai algoritma penjadwalan CPU melalui proses simulasi.
 
 ---
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
-
+1. Penjadwalan CPU merupakan mekanisme yang dijalankan oleh sistem operasi untuk menentukan proses mana dari *ready queue* yang memperoleh alokasi waktu pemrosesan pada CPU, dengan tujuan menjaga CPU tetap aktif dan mendukung lingkungan sistem yang bersifat multiprogamming.
+2. Penjadwalan CPU berfungsi untuk mengatur pemanfaatan sumber daya prosesor secara efisien, dengan sasaran uatama memaksimalkan penggunaan CPU, meningkatkan jumlah proses yang dapat diselesaikan dalam satuan waktu tertentu, serta meminimalkan waktu tunggu dan waktu penyelesaian proses.
+3. Algoritma penjadwalan CPU diklasifikasikan ke dalam dua kategori, yaitu non-preemptive, di mana proses dieksekusi hingga selesai atau menunggu I/O, dan preemptive, di mana sistem operasi dapat menghentikan sementara proses yang sedang berjalan untuk memberikan kesempatan eksekusi kepada proses lain.
+4. Dalam sistem operasi, proses umumnya mengalami siklus bergantian antara eksekusi CPU (CPU burst) dan operasi masukan/keluaran (I/O burst), sehingga penjadwalan CPU berperan penting dalam menentukan proses berikutnya yang dieksekusi ketika proses aktif memasuki keadaan menunggu atau telah selesai.
+5. Kinerja algoritma penjadwalan CPU dievaluasi menggunakan beberapa parameter, antara lain tingkat pemanfaatan CPU, throughput, turnaround time, waiting time, dan response time, yang digunakan untuk menilai efektivitas serta efisiensi suatu algoritma penjadwalan.  
 ---
 
 ## Langkah Praktikum
@@ -58,14 +59,19 @@ Sertakan screenshot hasil percobaan atau diagram:
 Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 
 ---
-
+## Tugas 
+1. Buat progam simulasi FCFS atau SJF.
+2. Jalankan progam dengan dataset uji.
+3. Sajikan output dalam tabel atau grafik.
+4. Tuliskan laporan praktikum pada `laporan.md`.
 ## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+1. Mengapa simulasi diperlukan untuk menguji algoritma scheduling?
+   Jawaban : Simulasi diperlukan untuk menguji algoritma scheduling karena sistem nyata bersifat kompleks, banyak proses bersaing, dan simmulasi mampu menunjukkan performa seperti waktu tunggu, waktu selesai, serta respons secara lebih realistis.
+2. Apa perbedaan hasil simulasi dengan perhitungan manual jika dataset besar?
+   Jawaban : Perhitungan manual cocok untuk sedikit proses namun lambat dan rawan salah, sedangkan simulasi lebih cepat, akurat, dapat menangani ribuan proses, serta mudah diulang dengan berbagai skenario.
+3. Algoritma mana yang lebih mudah diimplementassikan? Jelaskan.
+   Jawaban : Karena hanya mengikuti urutan kedatangan proses, sementara algoritma lain seperti Round Robin atau Priority Scheduling membutuhkan aturan tambahan yang lebih rumit. 
+   
 
 ---
 
