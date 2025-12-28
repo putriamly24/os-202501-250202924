@@ -12,7 +12,12 @@ Topik: Simulasi Algoritma Penjadwalan CPU
 ---
 
 ## Tujuan
-Mahasiswa mampu menganalisis cara kerja berbagai algoritma penjadwalan CPU melalui proses simulasi.
+Setelah menyelesaikan tugas ini, mahasiswa mampu:
+1. Membuat program simulasi algoritma penjadwalan FCFS dan/atau SJF.
+2. Menjalankan program dengan dataset uji yang diberikan atau dibuat sendiri.
+3. Menyajikan output simulasi dalam bentuk tabel atau grafik.
+4. Menjelaskan hasil simulasi secara tertulis.
+5. Mengunggah kode dan laporan ke Git repository dengan rapi dan tepat waktu.
 
 ---
 
@@ -25,11 +30,46 @@ Mahasiswa mampu menganalisis cara kerja berbagai algoritma penjadwalan CPU melal
 ---
 
 ## Langkah Praktikum
-1. Langkah-langkah yang dilakukan.  
-2. Perintah yang dijalankan.  
-3. File dan kode yang dibuat.  
-4. Commit message yang digunakan.
+1. Sesuaikan struktur folder dengan template repo:
+```
+praktikum/week9-sim-scheduling/
+├─ code/
+│  ├─ scheduling_simulation.py
+│  └─ dataset.csv
+├─ screenshots/
+│  └─ hasil_simulasi.png
+└─ laporan.md
+```
+2. Siapkan dataset seperti berikut:
+| Proses |	Arrival Time |	Burst Time |
+| P1 | 0 | 6 |
+| P2 | 1 | 8 |
+| P3 | 2 | 7 |	
+| P4 | 3 | 3 |
+3. Implementasikan Algoritma
 
+Program harus:
+- Menghitung waiting time dan turnaround time.
+- Mendukung minimal 1 algoritma (FCFS atau SJF non-preemptive).
+- Menampilkan hasil dalam tabel.
+
+4. Eksekusi & Validasi
+- Jalankan program menggunakan dataset uji.
+- Pastikan hasil sesuai dengan perhitungan manual minggu sebelumnya.
+- Simpan hasil eksekusi (screenshot).
+  
+5. Analisis
+- Jelaskan alur program.
+- Bandingkan hasil simulasi dengan perhitungan manual.
+- Jelaskan kelebihan dan keterbatasan simulasi.
+
+6. Commit & Push
+
+```bash
+git add .
+git commit -m "Minggu 9 - Simulasi Scheduling CPU"
+git push origin main
+```
 ---
 
 ## Kode / Perintah
