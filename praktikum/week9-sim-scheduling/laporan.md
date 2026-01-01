@@ -1,5 +1,5 @@
 
-# Laporan Praktikum Minggu 9
+# Laporan Praktikum Minggu [ 9 ]
 Topik: Simulasi Algoritma Penjadwalan CPU
 
 ---
@@ -74,11 +74,32 @@ git push origin main
 
 ## Kode / Perintah
 Tuliskan potongan kode atau perintah utama:
-```bash
-uname -a
-lsmod | head
-dmesg | head
 ```
+proses  = ["P1", "P2", "P3", "P4"]
+arrival = [0, 1, 2, 3]
+burst   = [6, 8, 7, 3]
+
+time = 0
+wt = []
+tat = []
+
+# Hitung FCFS
+for i in range(len(proses)):
+    if time < arrival[i]:
+        time = arrival[i]
+
+    wt.append(time - arrival[i])
+    tat.append(wt[i] + burst[i])
+    time += burst[i]
+
+# Tampilkan tabel
+print("Proses | Arrival | Burst | Waiting | Turnaround")
+print("-" * 45)
+
+for i in range(len(proses)):
+    print(f"{proses[i]:>5} | {arrival[i]:>7} | {burst[i]:>5} | {wt[i]:>7} | {tat[i]:>10}")
+```
+
 
 ---
 
@@ -89,21 +110,34 @@ Sertakan screenshot hasil percobaan atau diagram:
 ---
 
 ## Analisis
-- Jelaskan makna hasil percobaan.  
-- Hubungkan hasil dengan teori (fungsi kernel, system call, arsitektur OS).  
-- Apa perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)?  
+- Alur Progam
+  Progam diawali dengan pendefinisian data proses yang meliputi identitas proses, waktu kedatangan (*arrival time*), dan waktu eksekusi (*burst time*).Selanjutnya, program menginisialisasi variabel waktu CPU (`time`) yang berfungsi sebagai penanda waktu berjalan, serta dua buah list untuk menyimpan nilai waiting time dan turnaround time. Proses penjadwalan dilakukan menggunakan algoritma First Come First Served (FCFS), di mana proses dieksekusi berdasarkan urutan kedatangan. Pada setiap iterasi, program terlebih dahulu memastikan apakah CPU harus menunggu hingga proses tiba. Setelah itu, waiting time dihitung dari selisih antara waktu CPU saat proses akan dieksekusi dengan waktu kedatangannya. Nilai turnaround time diperoleh dari penjumlahan waiting time dan burst time. Setelah proses selesai dieksekusi, waktu CPU diperbarui dengan menambahkan burst time proses tersebut.Setelah seluruh proses dieksekusi, program menampilkan hasil perhitungan dalam bentuk tabel yang berisi informasi proses, *arrival time*, *burst time*, *waiting time*, dan *turnaround time*.
+>- Tabel Hasil Perhitungan FCFS
+  
+| Proses | Arrival Time | Burst Time | Waiting Time | Turnaround Time |
+| ------ | ------------ | ---------- | ------------ | --------------- |
+| P1     | 0            | 6          | 0            | 6               |
+| P2     | 1            | 8          | 5            | 13              |
+| P3     | 2            | 7          | 12           | 19              |
+| P4     | 3            | 3          | 18           | 21              |
+
+- Perbandingan Hasil Simulasi dengan Perhitungan Manual: 
+Berdasarkan hasil simulasi yang diperoleh, nilai waiting time dan turnaround time untuk setiap proses menunjukkan kesesuaian dengan hasil perhitungan manual yang telah dilakukan sebelumnya. Urutan eksekusi proses juga tidak mengalami perbedaan karena algoritma FCFS mengeksekusi proses sesuai urutan waktu kedatangan. Dengan demikian, dapat disimpulkan bahwa simulasi yang dibuat telah berjalan dengan benar dan hasilnya valid.
+- Kelebihan: 
+Simulasi ini mempermudah proses perhitungan waiting time dan turnaround time secara sistematis dan konsisten. Selain itu, penggunaan program dapat mengurangi kesalahan yang mungkin terjadi pada perhitungan manual. Penyajian hasil dalam bentuk tabel juga memudahkan proses analisis dan evaluasi hasil penjadwalan.
+- Kekurangan:
+  Simulasi ini masih terbatas pada penggunaan satu algoritma penjadwalan, yaitu FCFS. Program belum mempertimbangkan adanya context switching maupun penjadwalan bersifat preemptive. Selain itu, simulasi belum dilengkapi dengan visualisasi seperti Gantt Chart yang dapat memberikan gambaran waktu eksekusi proses secara lebih jelas.
+  
 
 ---
 
 ## Kesimpulan
-Tuliskan 2–3 poin kesimpulan dari praktikum ini.
+- Algoritma First Come First Served (FCFS) mengeksekusi proses berdasarkan urutan kedatangan sehingga mudah dipahami dan diimplementasikan, namun dapat menyebabkan waktu tunggu yang cukup lama bagi proses yang datang belakangan.
+- Hasil simulasi penjadwalan CPU menggunakan program menunjukkan nilai waiting time dan turnaround time yang sesuai dengan perhitungan manual, sehingga simulasi dapat dinyatakan berjalan dengan benar dan valid.
+- Melalui praktikum ini, penggunaan simulasi membantu mahasiswa memahami konsep penjadwalan CPU secara lebih sistematis serta mempermudah analisis dibandingkan perhitungan manual.
 
 ---
-## Tugas 
-1. Buat progam simulasi FCFS atau SJF.
-2. Jalankan progam dengan dataset uji.
-3. Sajikan output dalam tabel atau grafik.
-4. Tuliskan laporan praktikum pada `laporan.md`.
+
 ## Quiz
 1. Mengapa simulasi diperlukan untuk menguji algoritma scheduling?
    Jawaban : Simulasi diperlukan untuk menguji algoritma scheduling karena sistem nyata bersifat kompleks, banyak proses bersaing, dan simmulasi mampu menunjukkan performa seperti waktu tunggu, waktu selesai, serta respons secara lebih realistis.
@@ -117,8 +151,8 @@ Tuliskan 2–3 poin kesimpulan dari praktikum ini.
 
 ## Refleksi Diri
 Tuliskan secara singkat:
-- Apa bagian yang paling menantang minggu ini?  
-- Bagaimana cara Anda mengatasinya?  
+- Apa bagian yang paling menantang minggu ini? memahami alur perhitungan waiting time dan turnaround time dalam algoritma penjadwalan CPU.
+- Bagaimana cara Anda mengatasinya?memahami konsep dasarnya dan berdiskusi dengan teman.  
 
 ---
 
