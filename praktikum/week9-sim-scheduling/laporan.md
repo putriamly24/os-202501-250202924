@@ -105,7 +105,7 @@ for i in range(len(proses)):
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/dataset.py)
+![Screenshot hasil](screenshots/dataset.py.png)
 
 ---
 
