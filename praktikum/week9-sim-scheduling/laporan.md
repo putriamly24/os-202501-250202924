@@ -123,9 +123,9 @@ Sertakan screenshot hasil percobaan atau diagram:
 
 - Perbandingan Hasil Simulasi dengan Perhitungan Manual: 
 Berdasarkan hasil simulasi yang diperoleh, nilai waiting time dan turnaround time untuk setiap proses menunjukkan kesesuaian dengan hasil perhitungan manual yang telah dilakukan sebelumnya. Urutan eksekusi proses juga tidak mengalami perbedaan karena algoritma FCFS mengeksekusi proses sesuai urutan waktu kedatangan. Dengan demikian, dapat disimpulkan bahwa simulasi yang dibuat telah berjalan dengan benar dan hasilnya valid.
-- Kelebihan: 
+- Kelebihan : 
 Simulasi ini mempermudah proses perhitungan waiting time dan turnaround time secara sistematis dan konsisten. Selain itu, penggunaan program dapat mengurangi kesalahan yang mungkin terjadi pada perhitungan manual. Penyajian hasil dalam bentuk tabel juga memudahkan proses analisis dan evaluasi hasil penjadwalan.
-- Kekurangan:
+- Kekurangan :
   Simulasi ini masih terbatas pada penggunaan satu algoritma penjadwalan, yaitu FCFS. Program belum mempertimbangkan adanya context switching maupun penjadwalan bersifat preemptive. Selain itu, simulasi belum dilengkapi dengan visualisasi seperti Gantt Chart yang dapat memberikan gambaran waktu eksekusi proses secara lebih jelas.
   
 
