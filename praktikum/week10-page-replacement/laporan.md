@@ -129,33 +129,39 @@ Sertakan screenshot hasil percobaan atau diagram:
 ## Analisis
 1. **Perbandingan Algoritma FIFO dan LRU**
    
-   Untuk mengetahui perbedaan kinerja algoritma FIFO dan LRU, dilakukan perbandingan berdasarkan jumlah page fault yang dihasilkan dari proses simulasi. Hasil perbandingan tersebut disajikan dalam bentuk tabel sebagai berikut:
+   Untuk mengetahui perbedaan kinerja algoritma FIFO dan LRU, dilakukan perbandingan berdasarkan jumlah page fault yang
+   dihasilkan dari proses simulasi. Hasil perbandingan tersebut disajikan dalam bentuk tabel sebagai berikut:
+
    **Tabel Perbandingan Algoritma**
    
-   | Algoritma | Jumlah Page Fault | Keterangan |
-| --------- | ----------------- | ------------------------------------------------------------- |
-| FIFO      | 10                | Mengganti halaman berdasarkan urutan pertama masuk ke memori. |
-| LRU       | 9                 | Mengganti halaman yang sudah lama tidak digunakan.            |
+    | Algoritma | Jumlah Page Fault | Keterangan |
+    | --------- | ----------------- | ------------------------ |
+    | FIF0 | 10 | Mengganti halaman berdasarkan urutan pertama masuk ke memori. |
+    | LRU | 9 | Mengganti halaman yang sudah lama tidak digunakan. |
 
-2. **Analisis Perbedaan Page Fault**
 
-   Berdasarkan hasil simulasi yang dilakukan, algoritma FIFO menghasilkan jumlah page fault yang lebih banyak dibandingkan dengan algoritma LRU. Hal ini terjadi karena FIFO tidak memperhatikan apakah halaman masih sering digunakan atau tidak, melainkan hanya berdasarkan urutan masuk ke memori.
+3. **Analisis Perbedaan Page Fault**
 
-Sementara itu, algoritma LRU mempertahankan halaman yang baru saja diakses. Dengan cara tersebut, halaman yang sering digunakan memiliki kemungkinan lebih kecil untuk diganti sehingga jumlah page fault menjadi lebih sedikit.
+    Berdasarkan hasil simulasi yang dilakukan, algoritma FIFO menghasilkan jumlah page fault yang lebih banyak dibandingkan  
+    dengan algoritma LRU. Hal ini terjadi karena FIFO tidak memperhatikan apakah halaman masih sering digunakan atau tidak,  
+    melainkan hanya berdasarkan urutan masuk ke memori.
+    Sementara itu, algoritma LRU mempertahankan halaman yang baru saja diakses. Dengan cara tersebut, halaman yang sering
+    digunakan memiliki kemungkinan lebih kecil untuk diganti sehingga jumlah page fault menjadi lebih sedikit.
 
 3. **Analisis Efisiensi Algoritma**
 
-   Dari hasil praktikum ini dapat disimpulkan bahwa algoritma LRU lebih baik digunakan dibandingkan FIFO pada dataset yang diuji. Hal ini karena LRU menyesuaikan penggantian halaman dengan pola penggunaan data.
-
-Sebaliknya, FIFO dapat mengganti halaman yang masih dibutuhkan hanya karena halaman tersebut masuk lebih awal ke memori, sehingga menghasilkan page fault yang lebih banyak.
+   Dari hasil praktikum ini dapat disimpulkan bahwa algoritma LRU lebih baik digunakan dibandingkan FIFO pada dataset yang      diuji. Hal ini karena LRU menyesuaikan penggantian halaman dengan pola penggunaan data.
+   Sebaliknya, FIFO dapat mengganti halaman yang masih dibutuhkan hanya karena halaman tersebut masuk lebih awal ke memori,     sehingga menghasilkan page fault yang lebih banyak.
 
    
 ---
 
 ## Kesimpulan
 - Praktikum ini membantu memahami cara kerja memori virtual, khususnya proses page replacement ketika terjadi page fault.
-- Dari hasil simulasi, algoritma FIFO dan LRU memiliki cara kerja yang berbeda dalam mengganti halaman, sehingga menghasilkan jumlah page fault yang berbeda.
-- Berdasarkan dataset yang digunakan, algoritma LRU menghasilkan page fault lebih sedikit dibandingkan FIFO, sehingga lebih efektif dalam penggunaan memori.
+- Dari hasil simulasi, algoritma FIFO dan LRU memiliki cara kerja yang berbeda dalam mengganti halaman, sehingga
+  menghasilkan jumlah page fault yang berbeda.
+- Berdasarkan dataset yang digunakan, algoritma LRU menghasilkan page fault lebih sedikit dibandingkan FIFO, sehingga lebih
+  efektif dalam penggunaan memori.
 
 ---
 
@@ -164,27 +170,32 @@ Sebaliknya, FIFO dapat mengganti halaman yang masih dibutuhkan hanya karena hala
    
    **Jawab:**
 
-     Perbedaan algoritma FIFO dan LRU adalah algoritma FIFO mengganti halaman yang pertama kali masuk ke memori berdasarkan urutan kedatangannya tanpa melihat frekuensi pemakaian, sedangkan algoritma LRU mengganti halaman yang sudah lama tidak digunakan dengan melihat riwayat akses halaman.
+   Perbedaan algoritma FIFO dan LRU adalah algoritma FIFO mengganti halaman yang pertama kali masuk ke memori berdasarkan
+   urutan kedatangannya tanpa melihat frekuensi pemakaian, sedangkan algoritma LRU mengganti halaman yang sudah lama tidak
+   digunakan dengan melihat riwayat akses halaman.
 
-    2. **Mengapa FIFO dapat menghasilkan Belady’s Anomaly?**
-
-   **Jawab:**
-
-   FIFO dapat mengalami Belady’s Anomaly karena algoritma ini mengganti halaman berdasarkan urutan kedatangan tanpa memperhatikan pola penggunaan halaman, sehingga penambahan jumlah frame tidak selalu mengurangi jumlah page fault.
-
-   3. **Mengapa LRU umumnya menghasilkan performa lebih baik dibanding FIFO?**
+2. **Mengapa FIFO dapat menghasilkan Belady’s Anomaly?**
 
    **Jawab:**
 
-   Algoritma LRU umumnya menghasilkan performa yang lebih baik dibandingkan FIFO karena LRU mengganti halaman yang sudah lama tidak digunakan, sedangkan FIFO hanya mengganti halaman berdasarkan urutan masuk ke memori tanpa melihat pola penggunaan.
+   FIFO dapat mengalami Belady’s Anomaly karena algoritma ini mengganti halaman berdasarkan urutan kedatangan tanpa  
+   memperhatikan pola penggunaan halaman, sehingga penambahan jumlah frame tidak selalu mengurangi jumlah page fault.
+
+3. **Mengapa LRU umumnya menghasilkan performa lebih baik dibanding FIFO?**
+
+   **Jawab:**
+
+   Algoritma LRU umumnya menghasilkan performa yang lebih baik dibandingkan FIFO karena LRU mengganti halaman yang sudah  
+   lama tidak digunakan, sedangkan FIFO hanya mengganti halaman berdasarkan urutan masuk ke memori tanpa melihat pola  
+   penggunaan.
       
 
 ---
 
 ## Refleksi Diri
 Tuliskan secara singkat:
-- Apa bagian yang paling menantang minggu ini?  
-- Bagaimana cara Anda mengatasinya?  
+- Apa bagian yang paling menantang minggu ini? mengikuti langkah simulasi FIFO dan LRU karena harus teliti melihat perubahan isi frame. 
+- Bagaimana cara Anda mengatasinya? mencari tutorial atau sumber belajar tambahan. 
 
 ---
 
