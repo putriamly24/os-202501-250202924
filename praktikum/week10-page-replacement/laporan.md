@@ -1,21 +1,23 @@
 
-# Laporan Praktikum Minggu [X]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
+# Laporan Praktikum Minggu [10]
+Topik: Manajemen Memori – Page Replacement (FIFO & LRU)
 
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
+- **Nama**  : Putri Amaliya Rahmadani  
+- **NIM**   : 250202924  
+- **Kelas** : 1 IKRA
 
 ---
 
 ## Tujuan
-Tuliskan tujuan praktikum minggu ini.  
-Contoh:  
-> Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
-
+Setelah menyelesaikan tugas ini, mahasiswa mampu:
+1. Mengimplementasikan algoritma page replacement FIFO dalam program.
+2. Mengimplementasikan algoritma page replacement LRU dalam program.
+3. Menjalankan simulasi page replacement dengan dataset tertentu.
+4. Membandingkan performa FIFO dan LRU berdasarkan jumlah page fault.
+5. Menyajikan hasil simulasi dalam laporan yang sistematis.
 ---
 
 ## Dasar Teori
