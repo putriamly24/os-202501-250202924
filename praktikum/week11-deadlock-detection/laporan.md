@@ -49,9 +49,11 @@ Gunakan dataset sederhana yang berisi:
 Contoh tabel:
 
 | Proses |	Allocation |	Request |
+|--------|-------------|----------|
 | P1 |	R1 |	R2 |
 | P2 |	R2 |	R3 |
 | P3 |	R3 |	R1 |
+
 
 3. Implementasi Algoritma Deteksi Deadlock
 
@@ -137,27 +139,36 @@ Deadlock bisa dicegah dengan menghilangkan salah satu dari empat kondisi:
 
 ## Kesimpulan
 Sistem mengalami deadlock karena semua proses saling nunggu resource yang lagi dipakai proses lain, jadi gak ada yang bisa jalan. Deadlock ini terjadi karena keempat syarat Coffman terpenuhi: mutual exclusion, hold and wait, no preemption, dan circular wait. Untuk mencegahnya, bisa pakai urutan resource, algoritma Banker, atau hentikan salah satu proses supaya sistem bisa jalan lagi.
+
 ---
 
 ## Quiz
 1. Apa perbedaan antara deadlock prevention, avoidance, dan detection?
-   **Jawab:**
+
+    **Jawab:**
+ 
   - Prevention → Mencegah deadlock sebelum terjadi dengan cara membatasi cara proses pakai resource.
   - Avoidance → Menghindari deadlock saat proses jalan dengan memeriksa apakah permintaan resource aman.
   - Detection → Mendeteksi deadlock setelah terjadi dan mengambil tindakan untuk memulihkan sistem.
 2. Mengapa deteksi deadlock tetap diperlukan dalam sistem operasi?
+  
    **Jawab:**
- Deteksi deadlock tetap penting karena tidak semua sistem bisa mencegah atau menghindari deadlock dengan sempurna   sehingga sistem harus punya cara untuk mengetahui kapan deadlock terjadi dan memperbaikinya supaya proses tetap bisa jalan normal. Menurut buku sistem operasi, metode deteksi deadlock diperlukan pada sistem yang mengizinkan deadlock terjadi tetapi harus segera diperbaiki dengan cara memeriksa apakah terjadi deadlock dan menentukan proses serta resource yang terlibat supaya bisa dilakukan pemulihan.
+
+   Deteksi deadlock tetap penting karena tidak semua sistem bisa mencegah atau menghindari deadlock dengan sempurna sehingga    sistem harus punya cara untuk mengetahui kapan deadlock terjadi dan memperbaikinya supaya proses tetap bisa jalan normal.    Menurut buku sistem operasi, metode deteksi deadlock diperlukan pada sistem yang mengizinkan deadlock  terjadi tetapi        harus segera diperbaiki dengan cara memeriksa apakah terjadi deadlock dan menentukan proses serta  resource yang terlibat    supaya bisa dilakukan pemulihan.
+    
 3. Apa kelebihan dan kekurangan pendekatan deteksi deadlock?
-**Jawab**
-Pendekatan deteksi deadlock punya kelebihan karena bisa mengetahui dan mengatasi deadlock yang sudah terjadi sehingga sistem tetap stabil dan resource tidak terbuang sia‑sia, tetapi juga punya kekurangan karena memerlukan pemeriksaan berkala yang bisa memperlambat sistem dan menambah beban komputasi.
+
+   **Jawab:**
+
+   Pendekatan deteksi deadlock punya kelebihan karena bisa mengetahui dan mengatasi deadlock yang sudah terjadi sehingga 
+   sistem tetap stabil dan resource tidak terbuang sia‑sia, tetapi juga punya kekurangan karena memerlukan pemeriksaan          berkala yang bisa memperlambat sistem dan menambah beban komputasi.
    
 ---
 
 ## Refleksi Diri
 Tuliskan secara singkat:
-- Apa bagian yang paling menantang minggu ini?  
-- Bagaimana cara Anda mengatasinya?  
+- Apa bagian yang paling menantang minggu ini?saat membaca file CSV di Python karena sering muncul error  atau outputnya kosong.  
+- Bagaimana cara Anda mengatasinya?memastikan file CSV ada di folder yang sama dengan script.  
 
 ---
 
