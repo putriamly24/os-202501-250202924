@@ -1,20 +1,22 @@
 
-# Laporan Praktikum Minggu [X]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
-
+# Laporan Praktikum Minggu 12
+Topik: Virtualisasi Menggunakan Virtual Machine
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
-
+- **Nama**  : Putri Amaliya Rahmadani  
+- **NIM**   : 250202924
+- **Kelas** : 1 IKRA
 ---
 
 ## Tujuan
-Tuliskan tujuan praktikum minggu ini.  
-Contoh:  
-> Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
+Setelah menyelesaikan tugas ini, mahasiswa mampu:
+
+1. Menginstal perangkat lunak virtualisasi (VirtualBox/VMware).
+2. Membuat dan menjalankan sistem operasi guest di dalam VM.
+3. Mengatur konfigurasi resource VM (CPU, RAM, storage).
+4. Menjelaskan mekanisme proteksi OS melalui virtualisasi.
+5. Menyusun laporan praktikum instalasi dan konfigurasi VM secara sistematis.
 
 ---
 
@@ -24,10 +26,49 @@ Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 ---
 
 ## Langkah Praktikum
-1. Langkah-langkah yang dilakukan.  
-2. Perintah yang dijalankan.  
-3. File dan kode yang dibuat.  
-4. Commit message yang digunakan.
+1. **Struktur folder (sesuaikan dengan template repo):**
+```
+praktikum/week12-virtual-machine/
+├─ code/
+│  └─ catatan_konfigurasi.txt (opsional)
+├─ screenshots/
+│  ├─ instalasi_vm.png
+│  ├─ konfigurasi_resource.png
+│  └─ os_guest_running.png
+└─ laporan.md
+```
+2. **Instalasi Virtual Machine**
+
+- Instal VirtualBox atau VMware pada komputer host.
+- Pastikan fitur virtualisasi (VT-x / AMD-V) aktif di BIOS.
+
+3. **Instalasi Sistem Operasi**
+
+- Jalankan proses instalasi OS guest sampai selesai.
+- Pastikan OS guest dapat login dan berjalan normal.
+
+4. **Konfigurasi Resource**
+
+- Ubah konfigurasi CPU dan RAM.
+- Amati perbedaan performa sebelum dan sesudah perubahan resource.
+
+5. **Analisis Proteksi OS**
+
+- Jelaskan bagaimana VM menyediakan isolasi antara host dan guest.
+- Kaitkan dengan konsep sandboxing dan hardening OS.
+
+6. **Dokumentasi**
+
+- Ambil screenshot setiap tahap penting.
+- Simpan di folder `screenshots/`.
+
+7. **Commit & Push**
+   ```bash
+   git add .
+   git commit -m "Minggu 12 - Virtual Machine"
+   git push origin main
+   ```
+
 
 ---
 
