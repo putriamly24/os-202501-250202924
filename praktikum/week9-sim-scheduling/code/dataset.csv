@@ -1,0 +1,5 @@
+Process,Arrival,Burst
+P1,0,5
+P2,1,7
+P3,2,6
+P4,3,4
