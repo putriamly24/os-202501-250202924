@@ -41,12 +41,14 @@ praktikum/week9-sim-scheduling/
 └─ laporan.md
 ```
 2. Siapkan dataset seperti berikut:
+   
 | Proses |	Arrival Time |	Burst Time |
 |--------|---------------|-------------|
 | P1 | 0 | 6 |
 | P2 | 1 | 8 |
 | P3 | 2 | 7 |	
 | P4 | 3 | 3 |
+
 4. Implementasikan Algoritma
 
 Program harus:
@@ -119,7 +121,7 @@ print(f"Rata-rata Turnaround Time : {total_turnaround/n}")
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/dataset.py.png)
+![Screenshot hasil](screenshots/scheduling_simulation.py.png)
 
 ---
 
