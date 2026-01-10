@@ -1,14 +1,12 @@
 
-# Laporan Praktikum Minggu [X]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
-
+# Laporan Praktikum Minggu 11
+Topik: Simulasi dan Deteksi Deadlock
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
-
+- **Nama**  : Putri Amaliya Rahmadani  
+- **NIM**   : 250202924 
+- **Kelas** : 1 IKRA
 ---
 
 ## Tujuan
