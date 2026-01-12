@@ -142,7 +142,8 @@ Pada praktikum Virtual Machine dapat kami simpulkan bahwa:
 
 ## Quiz
 1. Apa perbedaan antara host OS dan guest OS?
-   **Jawaban:**
+
+    **Jawaban:**
 
    Host OS adalah sistem operasi utama yang terpasang langsung pada komputer dan memiliki kontrol penuh terhadap perangkat      keras. Sedangkan guest OS adalah sistem operasi yang dijalankan di dalam mesin virtual menggunakan software virtualisasi     dan hanya menggunakan resource yang dialokasikan oleh host OS. Perbedaan utamanya, host OS mengelola hardware secara         langsung, sementara guest OS berjalan secara terisolasi di atas host OS tanpa mengganggu sistem utama.  
 
