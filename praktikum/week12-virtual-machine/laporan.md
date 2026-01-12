@@ -4,8 +4,10 @@ Topik: Virtualisasi Menggunakan Virtual Machine
 ---
 
 ## Identitas
-- **Nama**  : Putri Amaliya Rahmadani  
-- **NIM**   : 250202924
+- **Nama**  : 
+  1. Sukmani Intan Jumala (250202983)
+  2. Novia Safitri (250202923)
+  3. Putri Amaliya Rahmadani (250202924)
 - **Kelas** : 1 IKRA
 ---
 
