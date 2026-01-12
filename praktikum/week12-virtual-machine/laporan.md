@@ -1,6 +1,7 @@
 
 # Laporan Praktikum Minggu 12
 Topik: Virtualisasi Menggunakan Virtual Machine
+
 ---
 
 ## Identitas
@@ -89,12 +90,19 @@ dmesg | head
 
 ## Hasil Eksekusi
 Dokumentasi Proses Instalasi Virtual Machine
+
 ![Screenshot hasil](screenshots/instalasi_vm.png)
+
 Dokumentasi Proses Konfigurasi Resource
+
 ![Screenshot hasil](screenshots/konfigurasi_resource.png)
+
 OS guest running 
+
 ![Screenshot hasil](screenshots/os_guest_running.png)
+
 Perbedaan performa sebelum dan sesudah perubahan resource
+
 ![Screenshot hasil](screenshots/perbedaan_performa.png)
 
 ---
@@ -154,8 +162,8 @@ Pada praktikum Virtual Machine dapat kami simpulkan bahwa:
 
 ## Refleksi Diri
 Tuliskan secara singkat:
-- Apa bagian yang paling menantang minggu ini?  
-- Bagaimana cara Anda mengatasinya?  
+- Apa bagian yang paling menantang minggu ini? Proses instalasi aplikasi virtualisasi dan sistem operasi guest memerlukan waktu lama karena pengunduhan aplikasi dan file ISO, sehingga pengerjaan tugas menjadi lebih memakan waktu. 
+- Bagaimana cara Anda mengatasinya?Melanjutkan proses pengunduhan hingga selesai dan berdiskusi dengan teman.
 
 ---
 
