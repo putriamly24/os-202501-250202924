@@ -1,20 +1,22 @@
 
-# Laporan Praktikum Minggu [X]
-Topik: [Tuliskan judul topik, misalnya "Arsitektur Sistem Operasi dan Kernel"]
-
+# Laporan Praktikum Minggu 13
+Topik: Docker – Resource Limit (CPU & Memori)
 ---
 
 ## Identitas
-- **Nama**  : [Nama Mahasiswa]  
-- **NIM**   : [NIM Mahasiswa]  
-- **Kelas** : [Kelas]
+- **Nama**  : Putri Amaliya Rahmadani
+- **NIM**   : 250202924 
+- **Kelas** : 1 IKRA
 
 ---
 
 ## Tujuan
-Tuliskan tujuan praktikum minggu ini.  
-Contoh:  
-> Mahasiswa mampu menjelaskan fungsi utama sistem operasi dan peran kernel serta system call.
+Setelah menyelesaikan tugas ini, mahasiswa mampu:
+1. Menulis Dockerfile sederhana untuk sebuah aplikasi/skrip.
+2. Membangun image dan menjalankan container.
+3. Menjalankan container dengan pembatasan **CPU** dan **memori**.
+4. Mengamati dan menjelaskan perbedaan eksekusi container dengan dan tanpa limit resource.
+5. Menyusun laporan praktikum secara runtut dan sistematis.
 
 ---
 
@@ -24,10 +26,48 @@ Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
 ---
 
 ## Langkah Praktikum
-1. Langkah-langkah yang dilakukan.  
-2. Perintah yang dijalankan.  
-3. File dan kode yang dibuat.  
-4. Commit message yang digunakan.
+1. Sesuaikan struktur folder seperti berikut:
+   ```
+   praktikum/week13-docker-resource-limit/
+   ├─ code/
+   │  ├─ Dockerfile
+   │  └─ app.*
+   ├─ screenshots/
+   │  └─ hasil_limit.png
+   └─ laporan.md
+   ```
+2. Siapkan Docker dan pastikan sudah berjalan:
+   Verifikasi:
+     ```bash
+     docker version
+     docker ps
+     ```
+3. Buat program sederhana di folder `code/` (bahasa bebas) yang:
+   - Melakukan komputasi berulang (untuk mengamati limit CPU), dan/atau
+   - Mengalokasikan memori bertahap (untuk mengamati limit memori).
+4. Buat Dockerfile
+   - Tulis `Dockerfile` untuk menjalankan program uji.
+   - Build image:
+     ```bash
+     docker build -t week13-resource-limit .
+     ```
+5. Jalankan container normal:
+     ```bash
+     docker run --rm week13-resource-limit
+     ```
+   Catat output/hasil pengamatan.
+6. Jalankan container dengan batasan resource (contoh):
+   ```bash
+   docker run --rm --cpus="0.5" --memory="256m" week13-resource-limit
+   ```
+   Catat perubahan perilaku program (mis. lebih lambat, error saat memori tidak cukup, dll.).
+7. Commit & Push
+
+   ```bash
+   git add .
+   git commit -m "Minggu 13 - Docker Resource Limit"
+   git push origin main
+   ```
 
 ---
 

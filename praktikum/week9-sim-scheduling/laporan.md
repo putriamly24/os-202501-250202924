@@ -41,12 +41,15 @@ praktikum/week9-sim-scheduling/
 └─ laporan.md
 ```
 2. Siapkan dataset seperti berikut:
+   
 | Proses |	Arrival Time |	Burst Time |
+|--------|---------------|-------------|
 | P1 | 0 | 6 |
 | P2 | 1 | 8 |
 | P3 | 2 | 7 |	
 | P4 | 3 | 3 |
-3. Implementasikan Algoritma
+
+4. Implementasikan Algoritma
 
 Program harus:
 - Menghitung waiting time dan turnaround time.
@@ -75,29 +78,42 @@ git push origin main
 ## Kode / Perintah
 Tuliskan potongan kode atau perintah utama:
 ```
-proses  = ["P1", "P2", "P3", "P4"]
-arrival = [0, 1, 2, 3]
-burst   = [6, 8, 7, 3]
+# FCFS Scheduling Sederhana
 
-time = 0
-wt = []
-tat = []
+# Data proses: Nama proses, Arrival Time, Burst Time
+proses = [
+    {"Nama": "P1", "Datang": 0, "Burst": 5},
+    {"Nama": "P2", "Datang": 1, "Burst": 7},
+    {"Nama": "P3", "Datang": 2, "Burst": 6},
+    {"Nama": "P4", "Datang": 3, "Burst": 4},
+]
 
-# Hitung FCFS
-for i in range(len(proses)):
-    if time < arrival[i]:
-        time = arrival[i]
+waktu_sekarang = 0
+total_waiting = 0
+total_turnaround = 0
 
-    wt.append(time - arrival[i])
-    tat.append(wt[i] + burst[i])
-    time += burst[i]
+# Hitung Waiting Time dan Turnaround Time
+for p in proses:
+    if waktu_sekarang < p["Datang"]:
+        waktu_sekarang = p["Datang"]
+    p["Waiting"] = waktu_sekarang - p["Datang"]
+    p["Turnaround"] = p["Waiting"] + p["Burst"]
+    waktu_sekarang += p["Burst"]
+    total_waiting += p["Waiting"]
+    total_turnaround += p["Turnaround"]
 
-# Tampilkan tabel
-print("Proses | Arrival | Burst | Waiting | Turnaround")
-print("-" * 45)
+# Tampilkan tabel hasil
+print("-"*50)
+print("Process    Arrival  Burst    Waiting    Turnaround")
+print("-"*50)
+for p in proses:
+    print(f"{p['Nama']:<10} {p['Datang']:<7} {p['Burst']:<8} {p['Waiting']:<9} {p['Turnaround']}")
+print("-"*50)
 
-for i in range(len(proses)):
-    print(f"{proses[i]:>5} | {arrival[i]:>7} | {burst[i]:>5} | {wt[i]:>7} | {tat[i]:>10}")
+n = len(proses)
+print(f"Rata-rata Waiting Time    : {total_waiting/n}")
+print(f"Rata-rata Turnaround Time : {total_turnaround/n}")
+
 ```
 
 
@@ -105,7 +121,7 @@ for i in range(len(proses)):
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/dataset.py.png)
+![Screenshot hasil](screenshots/scheduling_simulation.py.png)
 
 ---
 
