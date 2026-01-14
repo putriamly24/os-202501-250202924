@@ -21,7 +21,16 @@ Setelah menyelesaikan tugas ini, mahasiswa mampu:
 ---
 
 ## Dasar Teori
-Tuliskan ringkasan teori (3–5 poin) yang mendasari percobaan.
+1. Docker dan Container
+   Docker adalah platform yang digunakan untuk menjalankan aplikasi di dalam container. Container memungkinkan aplikasi         berjalan secara terisolasi dari sistem utama, namun tetap menggunakan kernel sistem operasi yang sama. Dengan container,     aplikasi menjadi lebih ringan dan mudah dipindahkan antar lingkungan sistem.
+2. Docker Image dan Dockerfile
+   Docker image merupakan paket yang berisi aplikasi beserta seluruh dependensinya. Image dibuat menggunakan Dockerfile,        yaitu file konfigurasi yang berisi instruksi untuk membangun image, seperti menentukan base image, menyalin file             aplikasi, dan menjalankan perintah tertentu.
+3. Manajemen Resource pada Container
+   Docker menyediakan fitur untuk mengatur penggunaan resource seperti CPU dan memori. Pengaturan ini bertujuan agar satu       container tidak menggunakan seluruh resource sistem, sehingga container lain atau sistem utama tetap dapat berjalan          dengan baik.
+4. Pembatasan CPU pada Docker
+   Pembatasan CPU pada Docker dilakukan untuk mengatur seberapa besar jatah pemrosesan yang dapat digunakan oleh container.     Dengan membatasi CPU, proses di dalam container akan berjalan lebih lambat dibandingkan tanpa batasan, karena waktu          eksekusi dibagi dengan proses lain di sistem.
+5. Pembatasan Memori pada Docker
+   Pembatasan memori digunakan untuk menentukan jumlah maksimum memori yang dapat digunakan oleh container. Jika penggunaan     memori melebihi batas yang ditentukan, container dapat dihentikan secara otomatis. Hal ini penting untuk mencegah            kehabisan memori pada sistem secara keseluruhan.
 
 ---
 
@@ -81,33 +90,61 @@ dmesg | head
 
 ---
 
-## Hasil Eksekusi
-Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/example.png)
+## Hasil Eksekusi & Analisis
+- Build Image
+  
+![Screenshot hasil](screenshots/build_image.png)
+- Hasil pengujian tanpa limit
+  
+![Screenshot hasil](screenshots/tanpa_limit.png)
+
+ - Hasil pengamatan tanpa limit:
+   - Container dapat berjalan tanpa hambatan.
+   - Proses perhitungan berjalan cepat.
+   - Penggunaan memori terus bertambah setiap iterasi.
+   - Tidak terjadi error atau penghentian program.
+ - Penjelasan:
+   Karena tidak ada pembatasan CPU dan memori, container bebas menggunakan resource dari sistem. Hal ini membuat proses         berjalan lebih cepat dan penggunaan memori terus meningkat tanpa kendala.
+  
+- hasil pengujian menggunakan limit
+  
+![Screenshot hasil](screenshots/menggunakan_limit.png)
+
+ - Hasil pengamatan menggunakan limit:
+   - Container tetap dapat dijalankan dengan batasan resource.
+   - Proses perhitungan berjalan lebih lambat.
+   - Penggunaan CPU dan memori dibatasi sesuai parameter.
+   - Container berpotensi berhenti jika melebihi batas memori.
+ - Penjelasan:
+  Dengan adanya pembatasan CPU dan memori, container tidak dapat menggunakan resource secara bebas. Akibatnya, kecepatan       eksekusi menurun dan penggunaan memori harus tetap berada dalam batas yang ditentukan.
 
 ---
 
-## Analisis
-- Jelaskan makna hasil percobaan.  
-- Hubungkan hasil dengan teori (fungsi kernel, system call, arsitektur OS).  
-- Apa perbedaan hasil di lingkungan OS berbeda (Linux vs Windows)?  
-
----
 
 ## Kesimpulan
-Tuliskan 2–3 poin kesimpulan dari praktikum ini.
+Praktikum ini membuktikan bahwa Docker merupakan platform yang efektif untuk menjalankan aplikasi di dalam container yang terisolasi. Dengan menggunakan container, aplikasi dapat dijalankan secara konsisten tanpa bergantung pada konfigurasi sistem operasi yang digunakan.
+
+Pembatasan resource CPU dan memori pada Docker container memberikan pengaruh terhadap kinerja aplikasi. Pembatasan CPU menyebabkan proses berjalan lebih lambat, sedangkan pembatasan memori membatasi jumlah memori yang dapat digunakan oleh aplikasi dan dapat mePenerapan resource limit pada Docker penting untuk mengontrol penggunaan resource sistem agar tidak digunakan secara berlebihan. Dengan adanya pembatasan ini, sistem dapat berjalan lebih stabil dan penggunaan resource dapat dibagi secara lebih adil antar container.nghentikan container jika melebihi batas.
+
+Penerapan resource limit pada Docker penting untuk mengontrol penggunaan resource sistem agar tidak digunakan secara berlebihan. Dengan adanya pembatasan ini, sistem dapat berjalan lebih stabil dan penggunaan resource dapat dibagi secara lebih adil antar container.
+
 
 ---
 
 ## Quiz
-1. [Pertanyaan 1]  
-   **Jawaban:**  
-2. [Pertanyaan 2]  
-   **Jawaban:**  
-3. [Pertanyaan 3]  
-   **Jawaban:**  
+1. Mengapa container perlu dibatasi CPU dan memori?
 
----
+   **Jawaban:**
+
+   Container perlu dibatasi CPU dan memori agar tidak menggunakan resource sistem secara berlebihan. Pembatasan ini menjaga     kinerja sistem tetap stabil dan mencegah satu container mengganggu proses lain yang berjalan.
+2. Apa perbedaan VM dan container dalam konteks isolasi resource?
+
+   **Jawaban:**
+
+   Perbedaan antara virtual machine dan container dalam konteks isolasi resource terletak pada tingkat isolasinya. Virtual      machine memiliki isolasi resource yang lebih kuat karena setiap VM menjalankan sistem operasi sendiri sehingga CPU dan       memori benar-benar terpisah. Sementara itu, container berbagi kernel sistem operasi dengan host sehingga isolasinya lebih    ringan, namun lebih efisien dalam penggunaan resource dan lebih cepat dijalankan.
+
+   
+   
 
 ## Refleksi Diri
 Tuliskan secara singkat:
