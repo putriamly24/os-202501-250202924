@@ -142,14 +142,19 @@ Penerapan resource limit pada Docker penting untuk mengontrol penggunaan resourc
    **Jawaban:**
 
    Perbedaan antara virtual machine dan container dalam konteks isolasi resource terletak pada tingkat isolasinya. Virtual      machine memiliki isolasi resource yang lebih kuat karena setiap VM menjalankan sistem operasi sendiri sehingga CPU dan       memori benar-benar terpisah. Sementara itu, container berbagi kernel sistem operasi dengan host sehingga isolasinya lebih    ringan, namun lebih efisien dalam penggunaan resource dan lebih cepat dijalankan.
+3. Apa dampak limit memori terhadap aplikasi yang boros memori?
+
+   **Jaawaban:**
+
+   Dampak limit memori terhadap aplikasi yang boros memori adalah aplikasi tidak dapat menggunakan memori secara bebas. Jika    penggunaan memori melebihi batas yang ditentukan, aplikasi dapat berjalan lebih lambat, mengalami error, atau bahkan         dihentikan oleh sistem.
 
    
    
 
 ## Refleksi Diri
 Tuliskan secara singkat:
-- Apa bagian yang paling menantang minggu ini?  
-- Bagaimana cara Anda mengatasinya?  
+- Apa bagian yang paling menantang minggu ini?mengatasi error yang muncul saat menjalankan Docker, terutama ketika container berhenti karena batas memori.  
+- Bagaimana cara Anda mengatasinya? menghentikan proses yang tidak diperlukan.
 
 ---
 
