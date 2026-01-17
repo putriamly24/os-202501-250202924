@@ -143,7 +143,7 @@ dmesg | head
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/deadlock_detection.py14.png)
+![Screenshot hasil](screenshots/deadlock_detection.14py.png)
 
 ---
 
