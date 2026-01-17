@@ -148,16 +148,16 @@ Sertakan screenshot hasil percobaan atau diagram:
 ## Quiz
 1. Mengapa format IMRAD membantu membuat laporan praktikum lebih ilmiah dan mudah dievaluasi?
 
-**Jawaban:** Format IMRAD memudahkan penyusunan laporan praktikum karena setiap bagian memiliki tujuan yang jelas, mulai dari penjelasan masalah hingga analisis hasil. Silberschatz et al. (2018) menjelaskan bahwa struktur penulisan yang sistematis membantu pembaca menilai metode dan hasil eksperimen secara lebih terarah, sedangkan Tanenbaum dan Bos (2015) menekankan bahwa pemisahan hasil dan pembahasan meningkatkan kejelasan evaluasi ilmiah.
+   **Jawaban:** Format IMRAD memudahkan penyusunan laporan praktikum karena setiap bagian memiliki tujuan yang jelas, mulai     dari penjelasan masalah hingga analisis hasil. Silberschatz et al. (2018) menjelaskan bahwa struktur penulisan yang          sistematis membantu pembaca menilai metode dan hasil eksperimen secara lebih terarah, sedangkan Tanenbaum dan Bos (2015)     menekankan bahwa pemisahan hasil dan pembahasan meningkatkan kejelasan evaluasi ilmiah.
 
 2. Apa perbedaan antara bagian Hasil dan Pembahasan?
 
-##Jawaban:**Bagian Hasil berisi penyajian data atau output yang diperoleh dari praktikum, seperti tabel, grafik, atau hasil eksekusi program, tanpa disertai penafsiran. Bagian ini fokus pada apa yang diperoleh dari eksperimen.
-Sementara itu, bagian Pembahasan berisi penjelasan dan interpretasi terhadap hasil tersebut, termasuk alasan terjadinya hasil, kaitannya dengan teori, serta perbandingan dengan ekspektasi atau referensi yang digunakan. Pembahasan menjelaskan mengapa hasil tersebut terjadi, bukan sekadar apa hasilnya.
+   **Jawaban:** Bagian Hasil berisi penyajian data atau output yang diperoleh dari praktikum, seperti tabel, grafik, atau       hasil eksekusi program, tanpa disertai penafsiran. Bagian ini fokus pada apa yang diperoleh dari eksperimen.
+   Sementara itu, bagian Pembahasan berisi penjelasan dan interpretasi terhadap hasil tersebut, termasuk alasan terjadinya      hasil, kaitannya dengan teori, serta perbandingan dengan ekspektasi atau referensi yang digunakan. Pembahasan menjelaskan    mengapa hasil tersebut terjadi, bukan sekadar apa hasilnya.
 
 3. Mengapa sitasi dan daftar pustaka penting, bahkan untuk laporan praktikum?
 
-**Jawaban:**Sitasi dan daftar pustaka penting dalam laporan praktikum karena menunjukkan bahwa penulisan didasarkan pada sumber yang jelas dan dapat dipertanggungjawabkan. Dengan mencantumkan referensi, penulis menghargai karya ilmiah orang lain dan menghindari plagiarisme. Selain itu, sitasi membantu pembaca menelusuri teori atau konsep yang digunakan sehingga laporan praktikum memiliki dasar ilmiah yang kuat dan mudah diverifikasi.
+   **Jawaban:** Sitasi dan daftar pustaka penting dalam laporan praktikum karena menunjukkan bahwa penulisan didasarkan pada    sumber yang jelas dan dapat dipertanggungjawabkan. Dengan mencantumkan referensi, penulis menghargai karya ilmiah orang      lain dan menghindari plagiarisme. Selain itu, sitasi membantu pembaca menelusuri teori atau konsep yang digunakan            sehingga laporan praktikum memiliki dasar ilmiah yang kuat dan mudah diverifikasi.
 
 ---
 
