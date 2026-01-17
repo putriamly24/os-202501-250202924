@@ -148,7 +148,7 @@ Sertakan screenshot hasil percobaan atau diagram:
 ---
 
 ## Quiz
-1.  Mengapa format IMRAD membantu membuat laporan praktikum lebih ilmiah dan mudah dievaluasi?
+1. Mengapa format IMRAD membantu membuat laporan praktikum lebih ilmiah dan mudah dievaluasi?
 
    **Jawaban:** Format IMRAD memudahkan penyusunan laporan praktikum karena setiap bagian memiliki tujuan yang jelas, mulai     dari penjelasan masalah hingga analisis hasil. Silberschatz et al. (2018) menjelaskan bahwa struktur penulisan yang          sistematis membantu pembaca menilai metode dan hasil eksperimen secara lebih terarah, sedangkan Tanenbaum dan Bos (2015)     menekankan bahwa pemisahan hasil dan pembahasan meningkatkan kejelasan evaluasi ilmiah.
 
