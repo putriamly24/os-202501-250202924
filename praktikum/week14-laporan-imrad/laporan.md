@@ -162,6 +162,12 @@ Sertakan screenshot hasil percobaan atau diagram:
    **Jawaban:** Sitasi dan daftar pustaka penting dalam laporan praktikum karena menunjukkan bahwa penulisan didasarkan pada    sumber yang jelas dan dapat dipertanggungjawabkan. Dengan mencantumkan referensi, penulis menghargai karya ilmiah orang      lain dan menghindari plagiarisme. Selain itu, sitasi membantu pembaca menelusuri teori atau konsep yang digunakan            sehingga laporan praktikum memiliki dasar ilmiah yang kuat dan mudah diverifikasi.
 ---
 
+## Referensi
+
+1. Silberschatz, A., Galvin, P. B., & Gagne, G. (2018). *Operating System Concepts* (10th ed.). Wiley.
+2. Tanenbaum, A. S., & Bos, H. (2015). *Modern Operating Systems* (4th ed.). Pearson.
+
+---
 ## Refleksi Diri
 Tuliskan secara singkat:
 - Apa bagian yang paling menantang minggu ini? mengimplementasikan algoritma deteksi deadlock
