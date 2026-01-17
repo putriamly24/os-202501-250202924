@@ -143,7 +143,7 @@ dmesg | head
 
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
-![Screenshot hasil](screenshots/example.png)
+![Screenshot hasil](screenshots/deadlock_detection.py14.png)
 
 ---
 
@@ -164,8 +164,8 @@ Sertakan screenshot hasil percobaan atau diagram:
 
 ## Refleksi Diri
 Tuliskan secara singkat:
-- Apa bagian yang paling menantang minggu ini?  
-- Bagaimana cara Anda mengatasinya?  
+- Apa bagian yang paling menantang minggu ini? mengimplementasikan algoritma deteksi deadlock
+- Bagaimana cara Anda mengatasinya?  mempelajari kembali konsep deadlock dari materi kuliah dan referensi buku
 
 ---
 
