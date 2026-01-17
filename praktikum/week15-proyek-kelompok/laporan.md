@@ -76,5 +76,12 @@ Tuliskan secara singkat:
 
 ---
 
+## Refleksi Diri
+Tuliskan secara singkat:
+- Apa bagian yang paling menantang minggu ini?  
+- Bagaimana cara Anda mengatasinya?  
+
+---
+
 **Credit:**  
 _Template laporan praktikum Sistem Operasi (SO-202501) – Universitas Putra Bangsa_
