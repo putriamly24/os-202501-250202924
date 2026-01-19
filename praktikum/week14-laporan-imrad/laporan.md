@@ -130,17 +130,6 @@ Keterbatasan pengujian terletak pada penggunaan dataset dan skenario yang masih 
 
 ---
 
-
-## Kode / Perintah
-Tuliskan potongan kode atau perintah utama:
-```bash
-uname -a
-lsmod | head
-dmesg | head
-```
-
----
-
 ## Hasil Eksekusi
 Sertakan screenshot hasil percobaan atau diagram:
 ![Screenshot hasil](screenshots/deadlock_detection.14py.png)
